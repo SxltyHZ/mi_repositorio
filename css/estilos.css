@@ -1,0 +1,217 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: "Nohemi";
+    src: url("../assets/fonts/Nohemi/Nohemi/Variable-TT/Nohemi-VF.ttf");
+}
+
+body{
+    font-family: "Nohemi";
+    background-color: #FFEDFE;
+}
+/* Start NavBar*/
+nav{
+    width: 100%;
+    padding: 1rem, 1rem, 1rem, 1rem;
+    background-color: #FFEDFE;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+}
+.logotipo_menu{
+    width: 8.5rem;
+    height: 2rem;
+}
+nav ul{
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: .7rem;
+    gap: 2rem;
+}
+nav ul li{
+    text-decoration: none;
+    font-family: "Nohemi";
+    font-style: medium;
+    font-size: 1.625rem;
+    line-height: 0.839rem;
+    line-height: 120%;
+    color: #000920;
+}
+nav ul li:hover{
+    color: #1306B2;
+}
+.btn{
+    
+    font-family: "Nohemi";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 1.625rem;
+    line-height: 120%;
+    color: #1306B2;
+
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+    border: 1px solid #1306B2;
+    border-radius: 1.5rem;
+}
+.btn:hover{
+
+    font-family: "Nohemi";
+    font-style: normal;
+    font-weight: 500;
+    line-height: 120%;
+    color: #0C037E;
+
+    background-color: #FFD0FC;
+    border-color: #0C037E;
+}
+/*End NavBar*/
+/* H1 CSS*/
+/* Breakpoint PC*/
+h1{
+    font-family: "Nohemi";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 6.875rem;
+    line-height: 132px;
+    color: #000920;
+    text-align: left;
+}
+@media only screen and (max-width: 1920px) {
+    h1 {
+    font-family: "Nohemi";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 6.875rem;
+    line-height: 132px;
+    color: #000920;
+    text-align: left;
+    }
+}
+/* Breakpoint Laptop*/
+@media only screen and (max-width: 1440px) {
+    h1 {
+    font-family: "Nohemi";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 5.5rem;
+    line-height: 100%;
+    color: #000920;
+    text-align: left;
+    }
+}
+/* Breakpoint Tablet*/
+@media only screen and (max-width: 768px){
+    h1 {
+        font-family: "Nohemi";
+        font-style: normal;
+        font-weight: 500;
+        font-size: 3rem;
+        line-height: 100%;
+        color: #000920;
+        text-align: center;
+        }
+}
+/* Breakpoint Movil*/
+@media only screen and (max-width: 320px) {
+    h1 {
+        font-family: "Nohemi";
+        font-style: normal;
+        font-weight: 500;
+        font-size: 2.25rem;
+        line-height: 100%;
+        color: #000920;
+        text-align: center;
+        }
+}
+/* H1 CSS end*/
+/*Start Hero Section*/
+.hero-section {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100vw;
+    height: 70%;
+    padding: 2rem, 2rem, 2rem, 2rem;
+    gap: auto;
+    background-color: #FFEDFE;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.hero-child {
+    width: auto;
+    height: auto;
+    padding: 4rem;
+}
+@media only screen and (max-width: 1440px){
+    .hero-section {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100vw;
+    height: 70%;
+    padding: 1rem, 1rem, 1rem, 1rem;
+    gap: auto;
+    background-color: #FFEDFE;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    }
+    .hero-child {
+    width: auto;
+    height: auto;
+    padding: 2rem;
+    }     
+}
+
+@media only screen and (max-width: 768px) {
+    .hero-section {
+        display: flex;
+        flex-wrap: wrap;
+        width: 100vw;
+        height: 70%;
+        gap: auto;
+        background-color: #FFEDFE;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        }
+        .hero-child {
+        width: auto;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        }     
+
+}
+
+@media only screen and (max-width: 320px) {
+    .hero-section {
+        display: flex;
+        flex-wrap: wrap;
+        width: 100vw;
+        height: 70%;
+        gap: auto;
+        background-color: #FFEDFE;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        }
+        .hero-child {
+        width: auto;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        }  
+}
